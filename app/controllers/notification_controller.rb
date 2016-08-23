@@ -8,7 +8,7 @@ class NotificationController < ApplicationController
 	end
 	def send_notification(registration_ids, options = {})
 		post_body = build_post_body(registration_ids, options)
-		params = {body: post_body.to_json}		}
+		params = {body: post_body.to_json}
 		uri = URI.parse("https://fcm.googleapis.com/fcm/send")
 		http = Net::HTTP.new(uri.host, uri.port)
 		http.use_ssl = true
