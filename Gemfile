@@ -51,18 +51,19 @@ end
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
 end
 
 
 #Enviornment Config
 
-# gem 'figaro', '1.1.1'
+gem 'figaro', '1.1.1'
 
 
 gem 'fcm'
 
 # gem 'thin'
 # #Grape for API
-# gem 'grape', '0.16.2'
-# gem 'grape-active_model_serializers', '1.4.0'
+gem 'grape', '0.16.2'
+gem 'grape-active_model_serializers', '1.4.0'
 
